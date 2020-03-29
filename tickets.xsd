@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="tickets">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ticket" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="subject"/>
+              <xs:element type="xs:string" name="description"/>
+              <xs:element type="xs:anyURI" name="attachment"/>
+              <xs:element name="response">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="userid" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:element type="xs:string" name="msg"/>
+                    <xs:element type="xs:date" name="msgdate"/>
+                    <xs:element type="xs:time" name="msgtime"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:date" name="createddate"/>
+              <xs:element type="xs:time" name="createdtime"/>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="id" use="required"/>
+            <xs:attribute type="prior" name="priority" use="optional"/>
+            <xs:attribute type="status" name="status" use="required"/>
+            <xs:attribute type="depts" name="department" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:simpleType name="prior">
+    <xs:restriction base="xs:string">
+      
+      <xs:enumeration value="normal"></xs:enumeration>
+      <xs:enumeration value="important"></xs:enumeration>
+      <xs:enumeration value="critical"></xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="depts">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="billing"></xs:enumeration>
+      <xs:enumeration value="shipping"></xs:enumeration>
+      <xs:enumeration value="returns"></xs:enumeration>
+      <xs:enumeration value="technical-issues"></xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="status">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="resolved"></xs:enumeration>
+      <xs:enumeration value="reviewing"></xs:enumeration>
+      <xs:enumeration value="pending"></xs:enumeration>
+      <xs:enumeration value="unresolved"></xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  
+</xs:schema>

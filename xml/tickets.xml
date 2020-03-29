@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tickets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="tickets.xsd">
+  <ticket id="001" userid="333" status="reviewing" department="shipping">
+    <title>Web address is giving</title>
+    <description>I have been informed that i will be getting the store credits for the product I returned last week but I didnot recieved yet.</description>
+    <attachment>bill.pdf</attachment>    
+    <ticketdate>2020-01-26</ticketdate>
+<msg by="222">staff say hi</msg><msg by="333">hello by client</msg><msg by="222">staff again say hi</msg><msg by="222">hello by client again</msg></ticket>
+
+  <ticket id="002" userid="444" status="resolved" department="returns">
+    <title>Stopped installation in between</title>
+    <description>It downloaded properly but while installing it stopped at 78%.</description>
+    <attachment>error.jpg</attachment>
+	<ticketdate>2020-01-26</ticketdate>
+  </ticket>
+  
+</tickets>

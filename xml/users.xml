@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<users xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="users.xsd">
+  <user id="111" type="staff">
+    <logininfo>
+	  <username>admin</username>
+	  <password>Ad001</password>
+    </logininfo>
+    <userinfo>
+      <name>
+        <firstname>Krishna</firstname>
+        <lastname>Shah</lastname>
+      </name>
+      <phoneno>8005555555</phoneno>
+      <email>admin@gmail.com</email>
+    </userinfo>
+  </user>
+  <user id="222" type="staff">
+    <logininfo>
+      <username>staff</username>
+	  <password>S001</password>
+    </logininfo>
+    <userinfo>
+      <name>
+        <firstname>Support</firstname>
+        <lastname>Staff</lastname>
+      </name>
+      <phoneno>9876543210</phoneno>
+      <email>staff@gmail.com</email>
+    </userinfo>
+  </user>
+  <user id="333" type="client">
+    <logininfo>
+      <username>Client</username>
+	  <password>C001</password>
+    </logininfo>
+    <userinfo>
+      <name>
+        <firstname>Client</firstname>
+        <lastname>One</lastname>
+      </name>
+      <phoneno>6789054321</phoneno>
+      <email>client@gmail.com</email>
+    </userinfo>
+  </user>
+  <user id="444" type="client">
+    <logininfo>
+      <username>Vicky</username>
+	  <password>Kaushal</password>
+    </logininfo>
+    <userinfo>
+      <name>
+        <firstname>Client</firstname>
+        <lastname>TWO</lastname>
+      </name>
+      <phoneno>6789054321</phoneno>
+      <email>client@gmail.com</email>
+    </userinfo>
+  </user>
+</users>

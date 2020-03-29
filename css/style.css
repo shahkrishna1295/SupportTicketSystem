@@ -1,0 +1,40 @@
+#newticketform, .container{
+    width:50%;
+	background:#009999;
+	margin:5% 0 0 25%;
+	border-radius : 7px;
+	padding : 10px;
+}
+
+form a{
+	color: #000000;
+	margin-left:2%;
+}
+
+#loginbtn, #cancelbtn, #createbtn, .extlink, #updtbtn{
+	background-color : #000000;
+	border : none;
+	border-radius : 6px;
+	color : #ffffff;
+	padding : 5px;
+}
+
+#updtbtn {
+	margin-left : 2%;
+}
+body button a{
+	color : #ffffff;
+}
+
+#liststicekt a, #listcticekt a{
+	color : #000000;
+}
+
+#loginform{
+	padding : 20px;
+}
+
+#headings{
+	font-weight:bold;
+	margin-bottom:2%;
+}
